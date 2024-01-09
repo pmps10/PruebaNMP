@@ -1,0 +1,26 @@
+
+server:
+  shutdown: graceful
+  port: 8000
+
+spring:
+  application:
+    name: loans-manager
+  profiles:
+    active: PREPRODUCTION
+  lifecycle:
+    timeout-per-shutdown-phase: 30s
+  web:
+    locale: es_MX
+    locale-resolver: fixed
+
+management:
+  endpoint:
+    health:
+      show-details: always
+      probes:
+        enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'

@@ -1,0 +1,10 @@
+
+spring:
+  application:
+    name: loans-manager-test
+  mvc:
+    locale: es_ES
+    locale-resolver: fixed
+  mongodb:
+    embedded:
+      version: 3.4.24
