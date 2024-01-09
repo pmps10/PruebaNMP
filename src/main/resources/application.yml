@@ -13,6 +13,14 @@ spring:
   web:
     locale: es_MX
     locale-resolver: fixed
+  data:
+    mongodb:
+      authentication-database: admin
+      username: user
+      password: pass
+      database: test
+      port: 27017
+      host: localhost
 
 management:
   endpoint:
